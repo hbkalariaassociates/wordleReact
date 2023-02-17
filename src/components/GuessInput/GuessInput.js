@@ -34,6 +34,7 @@ function GuessInput({
         onChange={(event) => setGuess(event.target.value.toLocaleUpperCase())}
         maxLength={5}
         minLength={5}
+        required
         disabled={gameStatus["isWon"] || gameStatus["isLost"]}
       />
     </form>
